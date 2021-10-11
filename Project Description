@@ -1,0 +1,24 @@
+Project Description
+
+	I really don't understand most of what is going on here, so it is hard to explain.
+	Connects to a local server, connects to MongoDB, and listens for API calls and 
+	validates them against User.
+	
+	I started from scratch and followed the assignments hoping that it would clear things up, 
+	but it is still confusing. I understand what is happening, but not how it is happening.
+
+
+Feature List
+	
+	Connect to server.
+		Connects to server and listens for API calls. with app.listen() in server.js.
+		
+	Connect to database.
+		Connects to MongoDB with connectDatabase() declared in db.js and called in server.js.
+		
+	Validate API calls.
+		Checks that API call was valid with app.post() in server.js. This method checks against 
+		the userSchema defined in Users.js.
+	
+	
+	
