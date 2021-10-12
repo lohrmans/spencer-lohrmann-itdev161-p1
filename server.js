@@ -17,11 +17,10 @@ app.get('/', (req, res) =>
 );
 
 app.post(
-	'/api/users', 
+	'/api/message', 
 	[
-		check('name', 'Please enter your name').not().isEmpty(),
-		check('email', 'Please enter a valid email').isEmail(),
-		check('password', 'Please enter a password with 6 or more characters').isLength({ min: 6 })	
+		check('contact', 'Contact not found.').not().isEmpty(),
+		check('message', 'Message required.').not().isEmpty(),
 	],
 	(req, res) => {
 		const errors = validationResult(req);
